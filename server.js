@@ -18,13 +18,14 @@ app.get('/drinks', (req,res)=>{
     });
 });
 
-
+//Add a new get route for /drinks/:id
 app.get('/drinks/:id', (req, res)=>{
     res.render('drinks_show.ejs', {
         drink: drinks[req.params.id],
     });
 });
 
+//Add a new get route for /foods/:id
 app.get('/foods/:id', (req, res) => {
     res.render('foods_show.ejs', {
         food: foods[req.params.id],
