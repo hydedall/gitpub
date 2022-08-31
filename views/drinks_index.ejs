@@ -11,11 +11,17 @@
 <body>
     <h1>Welcome to the Gitpub</h1>
     <h2>Drinks</h2>
-    <ul> 
+    <ul>
 
         <% for(let i=0; i < allDrinks.length; i++ ) {%>
             <% let drink=allDrinks[i].name %>
                 <% drink=drink[0].toUpperCase() + drink.substring(1).toLowerCase() %>
+
+                    <li>
+                        <a href="/drinks/<%= i %>">
+                            <%= drink %>
+                        </a>
+                    </li>
     </ul>
 
     <style type="text/css">
