@@ -25,6 +25,22 @@
                     <% } %>
     </ul>
 
+    <h2>Food</h2>
+    <ul>
+        <% for(let i=0; i < allFoods.length; i++ ) {%>
+            <% let food=allFoods[i].name %>
+                <% food=food[0].toUpperCase() + food.substring(1).toLowerCase() %>
+
+                    <li>
+                        <a href="/foods/<%= i %>">
+                            <%= food %>
+                        </a>
+                    </li>
+
+
+                    <% } %>
+    </ul>
+
     <style type="text/css">
         body {
             color: blanchedalmond;
