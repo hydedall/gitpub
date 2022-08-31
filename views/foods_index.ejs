@@ -1,0 +1,58 @@
+<!-- Same as Drinks! -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods</title>
+</head>
+
+<body>
+    <h1>Welcome to the Foodbar</h1>
+    <h2>Foods</h2>
+    <ul>
+
+        <!-- Make each listed FOOD a link that will go to the route /foods/x, 
+     where 'x' is the array position of the food in the data array. This should be set dynamically with ejs! -->
+        <h2>Food</h2>
+        <ul>
+            <% for(let i=0; i < allFoods.length; i++ ) {%>
+                <% let food=allFoods[i].name %>
+                    <% food=food[0].toUpperCase() + food.substring(1).toLowerCase() %>
+
+                        <li>
+                            <a href="/foods/<%= i %>">
+                                <%= food %>
+                            </a>
+                        </li>
+
+
+                        <% } %>
+        </ul>
+
+        <style type="text/css">
+            body {
+                color: blanchedalmond;
+                background-color: steelblue;
+            }
+        </style>
+
+</body>
+
+</html>
+
+
+
+<!-- 
+<% 'Scriptlet' tag, for control-flow, no output
+<%_ ‘Whitespace Slurping’ Scriptlet tag, strips all whitespace before it
+<%= Outputs the value into the template (HTML escaped)
+<%- Outputs the unescaped value into the template
+<%# Comment tag, no execution, no output
+<%% Outputs a literal '<%'
+%> Plain ending tag
+-%> Trim-mode ('newline slurp') tag, trims following newline
+_%> ‘Whitespace Slurping’ ending tag, removes all whitespace after it 
+-->
