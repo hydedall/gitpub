@@ -1,4 +1,5 @@
 const express = require('express');
+//Set this 'database' to a variable called drinks in your server.js file
 const drinks = require('./models/drinks');
 const foods = require('./models/food')
 
@@ -32,5 +33,5 @@ app.get('/foods/:id', (req, res) => {
 
 //port
 app.listen(PORT, ()=>{
-    console.log(`Listening in port`, PORT);
+    console.log(`Listening...`, PORT);
 });
