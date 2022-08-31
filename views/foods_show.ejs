@@ -1,0 +1,32 @@
+<!-- // Exactly the same as drinks show easy -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods</title>
+</head>
+
+<body>
+    <h1>At Food Bar</h1>
+    <h2>
+        <%= food.name %>
+    </h2>
+    <img src="<%= food.image %>.jpg" alt="<%= food.name %>" />
+    <h3>Price: $<%= food.price %>
+    </h3>
+    <a href="/foods">Back</a>
+
+    <style type="text/css">
+        body {
+            color: blanchedalmond;
+            background-color: steelblue;
+        }
+    </style>
+
+</body>
+
+</html>
