@@ -13,7 +13,7 @@
     <h2>Drinks</h2>
     <ul>
 
-<!-- Make each listed drink a link that will go to the route /drinks/x, 
+        <!-- Make each listed drink a link that will go to the route /drinks/x, 
      where 'x' is the array position of the drink in the data array. This should be set dynamically with ejs! -->
 
         <% for(let i=0; i < allDrinks.length; i++ ) {%>
@@ -28,7 +28,7 @@
                     <% } %>
     </ul>
 
-<!-- same as above -->
+    <!-- same as above -->
     <h2>Food</h2>
     <ul>
         <% for(let i=0; i < allFoods.length; i++ ) {%>
@@ -49,6 +49,11 @@
         body {
             color: blanchedalmond;
             background-color: steelblue;
+        }
+
+        li {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
         }
     </style>
 
