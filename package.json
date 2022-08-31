@@ -1,7 +1,7 @@
 {
   "name": "gitpub",
   "version": "1.0.0",
-  "description": "gitpub app",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,8 +10,7 @@
   "author": "Dallas Hyde",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.18.1",
-    "nodemon": "^2.0.19"
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
   }
 }
