@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Change all your html code inside your drinks_show.ejs file's <body> so that:  -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +9,18 @@
 </head>
 
 <body>
+    <!-- Your h1 tag says "At foo bar" -->
     <h1>At Foo Bar</h1>
+    <!-- There's an h2 tag that should display the name of the drink -->
     <h2>
         <%= drink.name %>
     </h2>
+    <!-- There's an image tag that should display the image of the drink -->
     <img src="<%= drink.image %>.jpg" alt="<%= drink.name %>" />
+    <!-- There's an h3 tag that should display the price of the drink -->
     <h3>Price: $<%= drink.price %>
     </h3>
+    <!-- Add an anchor tag with the text of back, that will take you back to your index.ejs view -->
     <a href="/drinks">Back</a>
 
     <style type="text/css">
